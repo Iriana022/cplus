@@ -19,9 +19,12 @@ int main(){
     do{
         std::cout << "Que voulez vous faire? ";
         getline(std::cin, cmd);
-        if(cmd != "ADD" && cmd != "SEARCH" && cmd != "SEARCH")
+        if(cmd != "ADD" && cmd != "SEARCH" && cmd != "EXIT")
             std::cout << "Essayez avec \"ADD\" ou \"SEARCH\" ou \"EXIT\"" << std::endl;
-    }while(cmd != "ADD" && cmd != "SEARCH" && cmd != "SEARCH");
+    }while(cmd != "ADD" && cmd != "SEARCH" && cmd != "EXIT");
+
+    if(cmd == "EXIT")
+        return 0;
 
     if(cmd == "ADD") {
         do{
