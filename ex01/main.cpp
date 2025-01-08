@@ -69,6 +69,7 @@ int main(){
             do{
                 std::cout << "Enter id to search : ";
                 std::cin >> id_search;
+                std::cin.ignore();
                 if(id_search < 0 && id_search > 8)
                     std::cout << "Incorrect parameter, please enter between 0 - 7";
             }while(id_search < 0 && id_search > 7);
